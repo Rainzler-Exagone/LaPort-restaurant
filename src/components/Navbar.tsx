@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -23,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-restaurant-red">
+            <h1 className="text-2xl font-bold text-restaurant-red font-dancing">
               Restaurant
             </h1>
           </div>
