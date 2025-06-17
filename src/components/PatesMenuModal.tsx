@@ -34,7 +34,7 @@ const PatesMenuModal: React.FC<MenuModalProps> = ({
   const renderMenuItem = (item: MenuItem | PizzaItem) => {
     if ('sizes' in item && item.sizes) {
       return (
-        <tr className="border-b border-restaurant-red/20 hover:bg-restaurant-black-light transition-colors">
+        <tr className="border-b border-restaurant-red/20 hover:bg-restaurant-black-light font-finlandica transition-colors">
           <td className="py-3 px-4 text-white font-medium">
             {item.name}
             {item.description && (

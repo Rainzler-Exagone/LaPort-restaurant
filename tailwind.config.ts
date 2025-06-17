@@ -22,6 +22,7 @@ export default {
 				'playfair': ['Playfair Display', 'serif'],
 				'dancing': ['Dancing Script', 'cursive'],
 				'lora': ['Lora', 'serif'],
+				'finlandica': ['Finlandica', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

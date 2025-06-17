@@ -11,8 +11,8 @@ interface MenuCardProps {
 const MenuCard: React.FC<MenuCardProps> = ({ title, image, onClick }) => {
   return (
     <Card 
-      className="group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-restaurant-black/80 border-restaurant-red/30 hover:border-restaurant-red overflow-hidden"
-      onClick={onClick}
+      className="group cursor-pointer font-finlandica transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-restaurant-black/80 border-restaurant-red/30 hover:border-restaurant-red overflow-hidden"
+      onClick={onClick} 
     >
       <div className="relative h-48 overflow-hidden">
         <img 

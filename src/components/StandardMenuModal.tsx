@@ -37,7 +37,7 @@ const StandardMenuModal: React.FC<MenuModalProps> = ({
   const isStandardMenu = !isPizzaMenu;
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto bg-restaurant-black border-restaurant-red">
+      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto bg-restaurant-black font-finlandica border-restaurant-red">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-restaurant-red mb-2">
             {title}

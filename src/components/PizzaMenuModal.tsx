@@ -33,7 +33,7 @@ const PizzaMenuModal: React.FC<MenuModalProps> = ({
   const renderMenuItem = (item: MenuItem | PizzaItem) => {
     if ('sizes' in item && item.sizes) {
       return (
-        <tr className="border-b border-restaurant-red/20 hover:bg-restaurant-black-light transition-colors">
+        <tr className="border-b border-restaurant-red/20 hover:bg-restaurant-black-light transition-colors font-finlandica">
           <td className="py-3 px-4 text-white font-medium">
             {item.name}
             {item.description && (
@@ -65,7 +65,7 @@ const PizzaMenuModal: React.FC<MenuModalProps> = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-restaurant-black border-restaurant-red">
+      <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-restaurant-black border-restaurant-red font-finlandica">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-restaurant-red mb-2">
             {title}

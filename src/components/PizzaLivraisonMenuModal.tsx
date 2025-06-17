@@ -65,7 +65,7 @@ const PizzaLivraisonMenuModal: React.FC<MenuModalProps> = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-restaurant-black border-restaurant-red">
+      <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-restaurant-black border-restaurant-red font-finlandica">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-restaurant-red mb-2">
             {title}

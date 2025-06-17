@@ -26,10 +26,10 @@ const AccueilSection: React.FC <AccueilSectionProps> = ({ onNavigateToMenus }) =
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-dancing">
           Bienvenue
         </h1>
-        <h2 className="text-3xl md:text-4xl text-restaurant-red mb-8 font-playfair">
+        <h2 className="text-3xl md:text-4xl text-restaurant-red mb-8 font-finlandica">
           au restaurant la Porte des Laurentides
         </h2>
-        <p className="text-xl text-gray-300 mb-12 leading-relaxed font-playfair">
+        <p className="text-xl text-gray-300 mb-12 leading-relaxed font-finlandica">
           Découvrez une expérience culinaire exceptionnelle dans un cadre élégant.
           Nos chefs passionnés vous proposent une cuisine raffinée alliant tradition et modernité.
         </p>
@@ -98,7 +98,7 @@ const AccueilSection: React.FC <AccueilSectionProps> = ({ onNavigateToMenus }) =
               <h3 className="text-2xl font-semibold text-white mb-4 font-playfair">
                 Une Tradition Familiale
               </h3>
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <p className="text-gray-300 leading-relaxed font-finlandica text-lg">
                Depuis 1993, nous servons avec passion.
 Depuis plus de 30 ans, Restaurant La Porte des Laurentides accueille ses clients avec le même engagement envers la qualité, la générosité et le service chaleureux. Fondé en 1993, notre établissement est devenu une véritable institution locale, où familles et amis se réunissent pour savourer des plats faits maison dans une ambiance conviviale. Chaque assiette raconte une histoire, chaque visite est un souvenir — et c`est avec fierté que nous continuons à vous servir, génération après génération.
               </p>
