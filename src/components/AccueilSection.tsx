@@ -36,7 +36,7 @@ const AccueilSection: React.FC <AccueilSectionProps> = ({ onNavigateToMenus }) =
         <div className="flex justify-center">
            <button 
               onClick={onNavigateToMenus}
-              className="bg-restaurant-red hover:bg-restaurant-red-dark text-white px-8 py-4 rounded-lg font-semibold font-playfair transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-restaurant-red hover:bg-restaurant-red-dark text-white px-8 py-4 rounded-lg font-semibold font-finlandica transition-all duration-300 hover:scale-105 shadow-lg"
             >
               Découvrir nos Menus
             </button>
