@@ -1,7 +1,18 @@
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import React from 'react';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  activeSection: string;
+  onSectionChange: (section: string) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ activeSection, onSectionChange }) => {
+    const navItems = [
+    { id: 'accueil', label: 'Accueil' },
+    { id: 'menus', label: 'Menus' },
+    { id: 'photos', label: 'Photos' },
+    { id: 'contact', label: 'Nous Joindre' }
+  ];
   return (
     <footer className="bg-black text-white font-finlandica">
       <div className="container mx-auto px-6 py-6">
@@ -38,9 +49,21 @@ const Footer: React.FC = () => {
 
           {/* Company Links Spread Horizontally */}
           <div className="flex flex-wrap gap-6 justify-evenly w-full lg:w-auto text-sm text-gray-300">
-            <a href="#partenaires" className="hover:text-white transition">Partenaires</a>
-            <a href="#histoire" className="hover:text-white transition">Notre Histoire</a>
-            <a href="#contact" className="hover:text-white transition">Contact</a>
+            <button   onClick={() => {onSectionChange('acceuil'); 
+            window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    }); }} className="hover:text-white transition">Partenaires</button>
+            <button    onClick={() => {onSectionChange('menus'); 
+            window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    }); }}  className="hover:text-white transition">Menus</button>
+            <button   onClick={() => {onSectionChange('contact'); 
+            window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    }); }} className="hover:text-white transition">Contact</button>
           </div>
         </div>
 

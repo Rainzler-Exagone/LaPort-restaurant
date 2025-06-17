@@ -42,7 +42,7 @@ const Index = () => {
          <ScrollToTop />
         {renderSection()}
       </main>
-      <Footer/>
+      <Footer activeSection={activeSection} onSectionChange={setActiveSection}/>
     </div>
     
   );

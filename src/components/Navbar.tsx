@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
   activeSection: string;
@@ -9,22 +9,20 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
   const handleScrollToSection = (id: string) => {
-  const section = document.getElementById(id);
+    const section = document.getElementById(id);
     window.scrollTo({
       top: 0, // adjust offset for fixed navbar
-      behavior: 'smooth',
+      behavior: "smooth",
     });
     onSectionChange(id); // update state
-
-};
+  };
 
   const navItems = [
-    { id: 'accueil', label: 'Accueil' },
-    { id: 'menus', label: 'Menus' },
-    { id: 'photos', label: 'Photos' },
-    { id: 'contact', label: 'Nous Joindre' }
+    { id: "accueil", label: "Accueil" },
+    { id: "menus", label: "Menus" },
+    { id: "photos", label: "Photos" },
+    { id: "contact", label: "Nous Joindre" },
   ];
 
   return (
@@ -32,14 +30,24 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-  <button className='flex items-center '  onClick={() => onSectionChange('accueil')}>
-    <img 
-  src="/assets/images/logoNew.png" 
-  alt="Restaurant Logo" 
-  className="h-14 w-auto md:h-16" 
-/><h1 className='text-4xl font-dancing text-gray-200' >La Porte</h1>
-  </button>
-</div>
+            <button
+              className="flex items-center "
+              onClick={() => {
+                onSectionChange("accueil");
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              <img
+                src="/assets/images/logoNew.png"
+                alt="Restaurant Logo"
+                className="h-14 w-auto md:h-16"
+              />
+              <h1 className="text-4xl font-dancing text-gray-200">La Porte</h1>
+            </button>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
@@ -47,11 +55,17 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => onSectionChange(item.id)}
+                  onClick={() => {
+                    onSectionChange(item.id);
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
                   className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${
                     activeSection === item.id
-                      ? 'text-restaurant-red border-b-2 border-restaurant-red'
-                      : 'text-white hover:text-restaurant-red hover:scale-105'
+                      ? "text-restaurant-red border-b-2 border-restaurant-red"
+                      : "text-white hover:text-restaurant-red hover:scale-105"
                   }`}
                 >
                   {item.label}
@@ -80,12 +94,16 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
                   key={item.id}
                   onClick={() => {
                     onSectionChange(item.id);
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
                     setIsMenuOpen(false);
                   }}
                   className={`block px-3 py-2 text-base font-medium w-full text-left transition-all duration-300 ${
                     activeSection === item.id
-                      ? 'text-restaurant-red bg-restaurant-red/10'
-                      : 'text-white hover:text-restaurant-red hover:bg-restaurant-red/5'
+                      ? "text-restaurant-red bg-restaurant-red/10"
+                      : "text-white hover:text-restaurant-red hover:bg-restaurant-red/5"
                   }`}
                 >
                   {item.label}
