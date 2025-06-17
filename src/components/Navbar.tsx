@@ -9,6 +9,17 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
+  const handleScrollToSection = (id: string) => {
+  const section = document.getElementById(id);
+    window.scrollTo({
+      top: 0, // adjust offset for fixed navbar
+      behavior: 'smooth',
+    });
+    onSectionChange(id); // update state
+
+};
+
   const navItems = [
     { id: 'accueil', label: 'Accueil' },
     { id: 'menus', label: 'Menus' },
@@ -23,10 +34,10 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
           <div className="flex-shrink-0">
   <button className='flex items-center '  onClick={() => onSectionChange('accueil')}>
     <img 
-  src="/assets/images/Logo.png" 
+  src="/assets/images/logoNew.png" 
   alt="Restaurant Logo" 
   className="h-14 w-auto md:h-16" 
-/><h1 className='text-4xl font-dancing text-gray-200' >La Port</h1>
+/><h1 className='text-4xl font-dancing text-gray-200' >La Porte</h1>
   </button>
 </div>
 

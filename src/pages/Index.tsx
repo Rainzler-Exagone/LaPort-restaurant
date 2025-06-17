@@ -7,6 +7,8 @@ import MenusSection from '@/components/MenusSection';
 import PhotosSection from '@/components/PhotosSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import Partners from '@/components/PartnersSections';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('accueil');
@@ -37,6 +39,7 @@ const Index = () => {
       <VideoBackground />
       <Navbar activeSection={activeSection} onSectionChange={setActiveSection} />
       <main className="relative z-10">
+         <ScrollToTop />
         {renderSection()}
       </main>
       <Footer/>

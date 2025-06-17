@@ -4,28 +4,28 @@ import React from 'react';
 const PhotosSection: React.FC = () => {
   const photos = [
     {
-      url: "/assets/images/tabledhot.jpg",
-      title: "Plat Principal"
+      url: "/assets/photos/IMG_6346.jpg",
+      title: "Espace Sanitaire"
     },
     {
-      url: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop",
-      title: "Ambiance Restaurant"
+      url: "/assets/photos/IMG_6349.jpg",
+      title: "Espace Sanitaire"
     },
     {
-      url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop",
-      title: "Intérieur Élégant"
+      url: "/assets/photos/IMG_6350.jpg",
+      title: "Salle à manger"
     },
     {
-      url: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=400&fit=crop",
-      title: "Cuisine Raffinée"
+      url: "/assets/photos/IMG_6351.jpg",
+      title: "Salle à manger"
     },
     {
-      url: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&h=400&fit=crop",
-      title: "Desserts Maison"
+      url: "/assets/photos/IMG_6352.jpg",
+      title: "Salle à manger"
     },
     {
-      url: "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&h=400&fit=crop",
-      title: "Service Premium"
+      url: "/assets/photos/IMG_6353.jpg",
+      title: "Espace Sanitaire"
     }
   ];
 
