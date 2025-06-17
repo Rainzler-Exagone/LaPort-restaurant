@@ -99,19 +99,12 @@ const AccueilSection: React.FC <AccueilSectionProps> = ({ onNavigateToMenus }) =
                 Une Tradition Familiale
               </h3>
               <p className="text-gray-300 leading-relaxed text-lg">
-                Fondé en 1985 par la famille Dubois, notre restaurant gastronomique puise ses racines 
-                dans la tradition culinaire française. Trois générations de chefs passionnés ont 
-                perpétué l'art de la haute cuisine, transmettant leurs secrets et leur savoir-faire 
-                de père en fils.
+               Depuis 1993, nous servons avec passion.
+Depuis plus de 30 ans, Restaurant La Porte des Laurentides accueille ses clients avec le même engagement envers la qualité, la générosité et le service chaleureux. Fondé en 1993, notre établissement est devenu une véritable institution locale, où familles et amis se réunissent pour savourer des plats faits maison dans une ambiance conviviale. Chaque assiette raconte une histoire, chaque visite est un souvenir — et c`est avec fierté que nous continuons à vous servir, génération après génération.
               </p>
-              <p className="text-gray-300 leading-relaxed text-lg">
-                Chef Antoine Dubois, formé dans les plus grandes maisons parisiennes, 
-                a su créer une cuisine d'exception qui marie respect des traditions et 
-                innovation contemporaine. Chaque plat raconte une histoire, celle de notre terroir 
-                et de notre passion pour l'excellence culinaire.
-              </p>
+  
               <div className="flex items-center space-x-4 pt-4">
-                <div className="text-restaurant-red font-bold text-xl">40+</div>
+                <div className="text-restaurant-red font-bold text-xl">30+</div>
                 <div className="text-gray-300">Années d'Excellence</div>
               </div>
             </div>

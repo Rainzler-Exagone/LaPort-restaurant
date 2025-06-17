@@ -5,7 +5,7 @@ import StandardMenuModal from './StandardMenuModal';
 import SaladMenuModal from './SaladModal';
 import PizzaLivraisonMenuModal from './PizzaLivraisonMenuModal';
 import PatesMenuModal from './PatesMenuModal';
-import SubmarineMenuModal from './submarineMenuModal';
+import SubmarineMenuModal from './SubmarineMenuModal';
 
 interface MenuModalProps {
   isOpen: boolean;
