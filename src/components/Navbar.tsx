@@ -17,15 +17,18 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-restaurant-black/90 backdrop-blur-sm border-b border-restaurant-red/20">
+    <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm border-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-restaurant-red font-dancing">
-              Restaurant
-            </h1>
-          </div>
+  <button className='flex items-center '  onClick={() => onSectionChange('accueil')}>
+    <img 
+  src="/assets/images/Logo.png" 
+  alt="Restaurant Logo" 
+  className="h-14 w-auto md:h-16" 
+/><h1 className='text-4xl font-dancing text-gray-200' >La Port</h1>
+  </button>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">

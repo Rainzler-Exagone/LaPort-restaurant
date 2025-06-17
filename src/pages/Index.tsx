@@ -6,14 +6,20 @@ import AccueilSection from '@/components/AccueilSection';
 import MenusSection from '@/components/MenusSection';
 import PhotosSection from '@/components/PhotosSection';
 import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('accueil');
 
+ 
+  const handleNavigateToMenus = () => {
+    setActiveSection('menus');
+  };
+
   const renderSection = () => {
     switch (activeSection) {
       case 'accueil':
-        return <AccueilSection />;
+        return <AccueilSection onNavigateToMenus={handleNavigateToMenus} />;
       case 'menus':
         return <MenusSection />;
       case 'photos':
@@ -21,9 +27,10 @@ const Index = () => {
       case 'contact':
         return <ContactSection />;
       default:
-        return <AccueilSection />;
+        return <AccueilSection onNavigateToMenus={handleNavigateToMenus} />;
     }
   };
+
 
   return (
     <div className="min-h-screen bg-restaurant-black text-white">
@@ -32,7 +39,9 @@ const Index = () => {
       <main className="relative z-10">
         {renderSection()}
       </main>
+      <Footer/>
     </div>
+    
   );
 };
 

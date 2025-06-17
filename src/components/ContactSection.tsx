@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MapPin, Phone, Clock, Mail } from 'lucide-react';
 
@@ -22,8 +21,8 @@ const ContactSection: React.FC = () => {
                 <h3 className="text-xl font-semibold text-white">Adresse</h3>
               </div>
               <p className="text-gray-300">
-                123 Rue de la Gastronomie<br />
-                Québec, QC G1R 2L3<br />
+                802 rue St-Isidore<br />
+                St-Lin-Laurentides<br />
                 Canada
               </p>
             </div>
@@ -34,20 +33,44 @@ const ContactSection: React.FC = () => {
                 <h3 className="text-xl font-semibold text-white">Téléphone</h3>
               </div>
               <p className="text-gray-300">
-                Restaurant: (418) 123-4567<br />
-                Livraison: (418) 123-4568
+                Restaurant: (450) 439-1711<br />
               </p>
             </div>
 
             <div className="bg-restaurant-black/80 p-6 rounded-lg border border-restaurant-red/30">
-              <div className="flex items-center mb-4">
+              <div className="flex items-center mb-6">
                 <Clock className="text-restaurant-red mr-3" size={24} />
-                <h3 className="text-xl font-semibold text-white">Heures d'ouverture</h3>
+                <h3 className="text-xl font-semibold text-white">Heures d'ouverture et de livraison</h3>
               </div>
-              <div className="text-gray-300 space-y-1">
-                <p>Lundi - Jeudi: 11h00 - 22h00</p>
-                <p>Vendredi - Samedi: 11h00 - 23h00</p>
-                <p>Dimanche: 12h00 - 21h00</p>
+              <div className="grid gap-3">
+                <div className="flex justify-between items-center py-2 px-3 bg-restaurant-black-light/50 rounded border-l-3 border-restaurant-red/60">
+                  <span className="text-white font-medium">Lundi</span>
+                  <span className="text-gray-300">11h00 --à-- 21h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 px-3 bg-restaurant-black-light/50 rounded border-l-3 border-restaurant-red/60">
+                  <span className="text-white font-medium">Mardi</span>
+                  <span className="text-gray-300">11h00 --à-- 21h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 px-3 bg-restaurant-black-light/50 rounded border-l-3 border-restaurant-red/60">
+                  <span className="text-white font-medium">Mercredi</span>
+                  <span className="text-gray-300">11h00 --à-- 21h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 px-3 bg-restaurant-black-light/50 rounded border-l-3 border-restaurant-red/80">
+                  <span className="text-white font-medium">Jeudi</span>
+                  <span className="text-gray-300">11h00 --à-- 22h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 px-3 bg-restaurant-black-light/50 rounded border-l-3 border-restaurant-red/80">
+                  <span className="text-white font-medium">Vendredi</span>
+                  <span className="text-gray-300">11h00 --à-- 22h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 px-3 bg-restaurant-black-light/50 rounded border-l-3 border-restaurant-red/80">
+                  <span className="text-white font-medium">Samedi</span>
+                  <span className="text-gray-300">11h00 --à-- 22h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 px-3 bg-restaurant-black-light/50 rounded border-l-3 border-restaurant-red/60">
+                  <span className="text-white font-medium">Dimanche</span>
+                  <span className="text-gray-300">11h00 --à-- 21h00</span>
+                </div>
               </div>
             </div>
 
@@ -57,8 +80,7 @@ const ContactSection: React.FC = () => {
                 <h3 className="text-xl font-semibold text-white">Email</h3>
               </div>
               <p className="text-gray-300">
-                info@restaurant.com<br />
-                reservation@restaurant.com
+                clo472@hotmail.com<br />
               </p>
             </div>
           </div>

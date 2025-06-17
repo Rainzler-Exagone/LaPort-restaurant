@@ -21,6 +21,7 @@ export default {
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
 				'dancing': ['Dancing Script', 'cursive'],
+				'lora': ['Lora', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

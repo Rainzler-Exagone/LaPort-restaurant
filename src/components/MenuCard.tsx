@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardDescription } from '@/components/ui/card';
 
 interface MenuCardProps {
   title: string;
@@ -22,7 +22,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ title, image, onClick }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-restaurant-black/90 via-transparent to-transparent" />
       </div>
-      <CardContent className="p-4">
+      <CardContent className="p-4 ">
         <h3 className="text-lg font-semibold text-white group-hover:text-restaurant-red transition-colors duration-300">
           {title}
         </h3>

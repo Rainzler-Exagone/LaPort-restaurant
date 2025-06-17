@@ -4,7 +4,7 @@ import React from 'react';
 const PhotosSection: React.FC = () => {
   const photos = [
     {
-      url: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&h=400&fit=crop",
+      url: "/assets/images/tabledhot.jpg",
       title: "Plat Principal"
     },
     {
