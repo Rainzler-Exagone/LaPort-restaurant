@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ activeSection, onSectionChange }) => {
     { id: 'contact', label: 'Nous Joindre' }
   ];
   return (
-    <footer className="bg-black text-white font-finlandica">
+    <footer className="bg-black text-white font-montserrat">
       <div className="container mx-auto px-6 py-6">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
 
@@ -22,7 +22,7 @@ const Footer: React.FC<FooterProps> = ({ activeSection, onSectionChange }) => {
           <div className="max-w-sm">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-10 h-10 rounded-lg overflow-hidden">
-                <img src="/assets/images/logoNew.png" alt="logo" />
+                <img src="/assets/images/restaurant-logo.png" alt="logo" />
               </div>
               <span className="text-lg font-bold leading-tight">
                 Restaurant la Porte <br /> des Laurentides

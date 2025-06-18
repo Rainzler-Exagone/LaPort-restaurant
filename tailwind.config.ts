@@ -23,6 +23,8 @@ export default {
 				'dancing': ['Dancing Script', 'cursive'],
 				'lora': ['Lora', 'serif'],
 				'finlandica': ['Finlandica', 'sans-serif'],
+				'montserrat':['Montserrat', 'sans-serif'],
+				'bebas': ['Bebas Neue', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

@@ -703,3 +703,44 @@ export const ImagesLivraison: string[] =[
   "/assets/images/frit.jpg",
   "/assets/images/poulet.jpg"
 ]
+
+
+
+ export const specials = [
+    {
+      id: 1,
+      price: "37,95",
+      title: "1 PIZZA 14\" (MOYENNE)",
+      description: "Toute garnie ou pepperoni fromage + 2 petites poutines ou 2 petits spaghettis sauce à la viande"
+    },
+    {
+      id: 2,
+      price: "59,95",
+      title: "2 PIZZAS 16\" (LARGE)",
+      description: "Toute garnie ou pepperoni fromage + 1 frite familiale + 4 liqueurs"
+    },
+    {
+      id: 3,
+      price: "34,95",
+      title: "2 LASAGNES",
+      description: "Gratinée ou La Porte + 2 pains à l'ail"
+    },
+    {
+      id: 4,
+      price: "44,95",
+      title: "2 SOUS-MARINS 14\"",
+      description: "Au choix + 2 frites et 2 liqueurs"
+    },
+    {
+      id: 5,
+      price: "36,95",
+      title: "FAMILIALE 4 PÂTES GRATINÉ",
+      description: "Choix de 4 sortes de pâtes : Penne, lasagne, spaghetti, rigatoni"
+    },
+    {
+      id: 6,
+      price: "30,95",
+      title: "FAMILIALE 4 PÂTES SAUCE VIANDE",
+      description: "Choix de 4 sortes de pâtes : Penne, lasagne, spaghetti, rigatoni"
+    }
+  ];

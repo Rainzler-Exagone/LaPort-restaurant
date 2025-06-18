@@ -1,6 +1,7 @@
 import { User } from "lucide-react";
 import React from "react";
 import Partners from "./PartnersSections";
+import SpecialsSection from "./SpecialsSection";
 
 interface AccueilSectionProps {
   onNavigateToMenus?: () => void;
@@ -29,13 +30,13 @@ const AccueilSection: React.FC<AccueilSectionProps> = ({
 
         {/* Foreground content */}
         <div className="max-w-4xl mx-auto animate-fade-in relative z-20">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-dancing">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-montserrat">
             Bienvenue
           </h1>
-          <h2 className="text-3xl md:text-4xl text-restaurant-red mb-8 font-finlandica">
+          <h2 className="text-3xl md:text-4xl text-restaurant-red mb-8 font-montserrat">
             au restaurant la Porte des Laurentides
           </h2>
-          <p className="text-xl text-gray-300 mb-12 leading-relaxed font-finlandica">
+          <p className="text-xl text-gray-300 mb-12 leading-relaxed font-montserrat">
             Découvrez une expérience culinaire exceptionnelle dans un cadre
             élégant. Nos chefs passionnés vous proposent une cuisine raffinée
             alliant tradition et modernité.
@@ -43,7 +44,7 @@ const AccueilSection: React.FC<AccueilSectionProps> = ({
           <div className="flex justify-center">
             <button
               onClick={onNavigateToMenus}
-              className="bg-restaurant-red hover:bg-restaurant-red-dark text-white px-8 py-4 rounded-lg font-semibold font-finlandica transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-restaurant-red hover:bg-restaurant-red-dark text-white px-8 py-4 rounded-lg font-semibold font-montserrat transition-all duration-300 hover:scale-105 shadow-lg"
             >
               Découvrir nos Menus
             </button>
@@ -86,13 +87,15 @@ const AccueilSection: React.FC<AccueilSectionProps> = ({
   </svg>
 </div> */}
       </div>
-
+       <section>
+        <SpecialsSection/>
+       </section>
       </section>
     <section id="histoire">
         <div  className="py-20 px-4 bg-gradient-to-b from-restaurant-black to-restaurant-black-light">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-restaurant-red mb-6 font-dancing">
+            <h2 className="text-4xl md:text-5xl font-bold text-restaurant-red mb-6 font-montserrat">
               Notre Histoire
             </h2>
             <div className="w-24 h-1 bg-restaurant-red mx-auto mb-8"></div>
@@ -100,10 +103,10 @@ const AccueilSection: React.FC<AccueilSectionProps> = ({
 
           <div className="grid md:grid-cols-2 gap-12 items-center ">
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-white mb-4 font-playfair">
+              <h3 className="text-2xl font-semibold text-white mb-4 font-montserrat">
                 Une Tradition Familiale
               </h3>
-              <p className="text-gray-300 leading-relaxed font-finlandica text-lg">
+              <p className="text-gray-300 leading-relaxed font-montserrat text-lg">
                 Depuis qu’il est arrivé au Québec en 1966, Spiro Mourelatos
                 entretient une vive passion pour le milieu de la restauration. À
                 seulement 19 ans, il a fondé son premier restaurant, Place
@@ -120,7 +123,7 @@ const AccueilSection: React.FC<AccueilSectionProps> = ({
                 pour ce domaine qui le passionne.
               </p>
 
-              <div className="flex items-center space-x-4 pt-4">
+              <div className="flex items-center space-x-4 pt-4 font-montserrat">
                 <div className="text-restaurant-red font-bold text-xl">30+</div>
                 <div className="text-gray-300">Années d'Excellence</div>
               </div>

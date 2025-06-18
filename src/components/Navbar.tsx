@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <button
-              className="flex items-center "
+              className="flex items-center gap-2"
               onClick={() => {
                 onSectionChange("accueil");
                 window.scrollTo({
@@ -41,9 +41,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
               }}
             >
               <img
-                src="/assets/images/logoNew.png"
+                src="/assets/images/restaurant-logo.png"
                 alt="Restaurant Logo"
-                className="h-14 w-auto md:h-16"
+                className="h-14 w-auto md:h-12 rounded-lg"
               />
               <h1 className="text-4xl font-dancing text-gray-200">La Porte</h1>
             </button>
@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8 font-finlandica">
+            <div className="ml-10 flex items-baseline space-x-8 font-montserrat">
               {navItems.map((item) => (
                 <button
                   key={item.id}

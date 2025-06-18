@@ -16,23 +16,19 @@ const Partners: React.FC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 lg:gap-16">
-          <div className="group flex flex-col items-center text-center transform hover:scale-105 transition-all duration-300">
-            <div className="relative mb-4">
-              <div className="w-24 h-24 lg:w-32 lg:h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300 border-4 border-white">
-                <User className="w-12 h-12 lg:w-16 lg:h-16 text-gray-400 group-hover:text-blue-600 transition-colors duration-300" />
-              </div>
+          <div className="group w-1/3 flex flex-col items-center text-center transform hover:scale-105 transition-all duration-300">
+            <div className="relative mb-4 ">
+                <img src="/assets/images/saputo.png" alt="saputo-logo"  />
             </div>
             <h3 className="text-xl font-semibold text-gray-200 mb-1">Saputo</h3>
           </div>
 
-          <div className="group flex flex-col items-center text-center transform hover:scale-105 transition-all duration-300">
-            <div className="relative mb-4">
-              <div className="w-24 h-24 lg:w-32 lg:h-32 bg-gradient-to-br from-red-100 to-orange-100 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300 border-4 border-white">
-                <User className="w-12 h-12 lg:w-16 lg:h-16 text-gray-400 group-hover:text-red-600 transition-colors duration-300" />
-              </div>
+          <div className="group w-1/3  flex flex-col items-center text-center transform hover:scale-105 transition-all duration-300">
+            <div className="relative  mb-4">
+                <img src="/assets/images/newmilano.png" alt="newmilano-logo"  />
             </div>
             <h3 className="text-xl font-semibold text-gray-200 mb-1">
-              Moilano
+              New Milano
             </h3>
           </div>
         </div>
