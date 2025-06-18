@@ -717,7 +717,7 @@ export const ImagesLivraison: string[] =[
       id: 2,
       price: "59,95",
       title: "2 PIZZAS 16\" (LARGE)",
-      description: "Toute garnie ou pepperoni fromage + 1 frite familiale + 4 liqueurs"
+      description: "Toute garnie ou pepperoni fromage + 1 frite familiale "
     },
     {
       id: 3,
@@ -729,7 +729,7 @@ export const ImagesLivraison: string[] =[
       id: 4,
       price: "44,95",
       title: "2 SOUS-MARINS 14\"",
-      description: "Au choix + 2 frites et 2 liqueurs"
+      description: "Au choix + 2 frites "
     },
     {
       id: 5,
