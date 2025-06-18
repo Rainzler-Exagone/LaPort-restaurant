@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
               <img
                 src="/assets/images/restaurant-logo.png"
                 alt="Restaurant Logo"
-                className="h-14 w-auto md:h-12 rounded-lg"
+                className="h-14 w-auto md:h-20 rounded-lg"
               />
               <h1 className="text-4xl font-dancing text-gray-200">La Porte</h1>
             </button>
