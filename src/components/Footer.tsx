@@ -22,7 +22,7 @@ const Footer: React.FC<FooterProps> = ({ activeSection, onSectionChange }) => {
           <div className="max-w-sm">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-30 h-30 rounded-lg overflow-hidden">
-                <img src="/assets/images/restaurant-logo.png" alt="logo" className='h-24 w-16' />
+                <img src="/assets/images/restaurant-logo.png" alt="logo" className='h-28 w-auto md:h-32 rounded-lg' />
               </div>
               <span className="text-lg font-bold leading-tight">
                 Restaurant la Porte <br /> des Laurentides

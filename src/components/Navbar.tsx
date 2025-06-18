@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm border-none">
+    <nav className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm border-none pt-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
               <img
                 src="/assets/images/restaurant-logo.png"
                 alt="Restaurant Logo"
-                className="h-14 w-auto md:h-20 rounded-lg"
+                className="h-24 w-auto md:h-32 rounded-lg"
               />
               <h1 className="text-4xl font-dancing text-gray-200">La Porte</h1>
             </button>
